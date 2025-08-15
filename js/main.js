@@ -9,3 +9,7 @@ navBtn.onclick = () => {
         navBtnImg.src = "./img/icons/nav_open.svg";
     }
 };
+
+AOS.init({
+    once: true,
+});

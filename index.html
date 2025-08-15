@@ -2,21 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Freelancer Portfolio</title>
 
         <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
 
-        <link
-            rel="stylesheet"
-            href="./css/main.css" />
-        <link
-            rel="stylesheet"
-            href="./css/media.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/media.css" />
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -24,74 +20,44 @@
             <div class="wrapper">
                 <!-- Header nav -->
                 <div class="header-nav">
-                    <a
-                        href="#!"
-                        class="logo"
-                        >Kelvin</a
-                    >
-                    <nav
-                        id="nav"
-                        class="nav open">
+                    <a href="#!" class="logo">Kelvin</a>
+                    <nav id="nav" class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a
-                                    href="#!"
-                                    class="nav__link active"
-                                    >Home</a
-                                >
+                                <a href="#!" class="nav__link active">Home</a>
                             </li>
                             <li class="nav__item">
-                                <a
-                                    href="#!"
-                                    class="nav__link"
-                                    >Works</a
-                                >
+                                <a href="#!" class="nav__link">Works</a>
                             </li>
                             <li class="nav__item">
-                                <a
-                                    href="#!"
-                                    class="nav__link"
-                                    >Services</a
-                                >
+                                <a href="#!" class="nav__link">Services</a>
                             </li>
                             <li class="nav__item">
-                                <a
-                                    href="#!"
-                                    class="nav__link"
-                                    >About</a
-                                >
+                                <a href="#!" class="nav__link">About</a>
                             </li>
                             <li class="nav__item">
-                                <a
-                                    href="#!"
-                                    class="nav__link"
-                                    >Contact</a
-                                >
+                                <a href="#!" class="nav__link">Contact</a>
                             </li>
                         </ul>
-                        <button
-                            id="nav-btn"
-                            class="nav__button">
-                            <img
-                                id="nav-btn-img"
-                                src="./img/icons/nav_open.svg"
-                                alt="Nav button" />
+                        <button id="nav-btn" class="nav__button">
+                            <img id="nav-btn-img" src="./img/icons/nav_open.svg" alt="Nav button" />
                         </button>
                     </nav>
                 </div>
 
                 <!-- Header content -->
-                <div class="header-row">
+                <div class="header-row" data-aos="fade-up">
                     <div class="header-content">
-                        <h1 class="header-heading">Kelvin Kramer<br />Designer & Developer</h1>
+                        <h1 class="header-heading">Kelvin Kramer<br /><span>Designer & Developer</span></h1>
                         <p>
                             I’m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.
                         </p>
                     </div>
-                    <div class="header-img">
-                        <img
-                            src="./img/header/hero.png"
-                            alt="" />
+                    <div class="header-img" data-aos="fade-left">
+                        <picture>
+                            <source media="(max-width: 799px)" srcset="./img/header/mobile/hero.png" />
+                            <img src="./img/header/hero.png" alt="" />
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -100,33 +66,24 @@
         <section class="services">
             <div class="wrapper">
                 <div class="services-row">
-                    <div class="service-card">
-                        <img
-                            class="service-card__img"
-                            src="./img/services/01.svg"
-                            alt="UI/UX Design" />
+                    <div class="service-card" data-aos="fade-down">
+                        <img class="service-card__img" src="./img/services/01.svg" alt="UI/UX Design" />
                         <h3 class="service-card__title">UI/UX Design</h3>
                         <p class="service-card__text">
                             Our design is translated into comprehensive digital environments built on latest development standards.
                         </p>
                     </div>
 
-                    <div class="service-card">
-                        <img
-                            class="service-card__img"
-                            src="./img/services/02.svg"
-                            alt="Development" />
+                    <div class="service-card" data-aos="fade-down">
+                        <img class="service-card__img" src="./img/services/02.svg" alt="Development" />
                         <h3 class="service-card__title">Development</h3>
                         <p class="service-card__text">
                             Our design is translated into comprehensive digital environments built on latest development standards.
                         </p>
                     </div>
 
-                    <div class="service-card">
-                        <img
-                            class="service-card__img"
-                            src="./img/services/03.svg"
-                            alt="Software Testing" />
+                    <div class="service-card" data-aos="fade-down">
+                        <img class="service-card__img" src="./img/services/03.svg" alt="Software Testing" />
                         <h3 class="service-card__title">Software Testing</h3>
                         <p class="service-card__text">
                             Our design is translated into comprehensive digital environments built on latest development standards.
@@ -142,27 +99,18 @@
                     <h2 class="title-1">Portfolio</h2>
                 </div>
 
-                <div class="project">
-                    <img
-                        class="project__img"
-                        src="./img/portfolio/01.jpg"
-                        alt="Online fashion store" />
+                <div class="project" data-aos="flip-down">
+                    <img class="project__img" src="./img/portfolio/01.jpg" alt="Online fashion store" />
                     <h3 class="project__title"><a href="#!">Online fashion store - Homepage</a></h3>
                 </div>
 
-                <div class="project">
-                    <img
-                        class="project__img"
-                        src="./img/portfolio/02.jpg"
-                        alt="Reebok Store" />
+                <div class="project" data-aos="flip-down">
+                    <img class="project__img" src="./img/portfolio/02.jpg" alt="Reebok Store" />
                     <h3 class="project__title"><a href="#!">Reebok Store - Concept</a></h3>
                 </div>
 
-                <div class="project">
-                    <img
-                        class="project__img"
-                        src="./img/portfolio/03.jpg"
-                        alt="Braun Landing Page" />
+                <div class="project" data-aos="flip-down">
+                    <img class="project__img" src="./img/portfolio/03.jpg" alt="Braun Landing Page" />
                     <h3 class="project__title"><a href="#!">Braun Landing Page - Concept</a></h3>
                 </div>
             </div>
@@ -173,41 +121,29 @@
                 <div class="contacts__title">
                     <h2 class="title-1">Contacts</h2>
                 </div>
-                <div class="contacts__content">
+                <div class="contacts__content" data-aos="zoom-in-down">
                     <p>Want to know more or just chat?<br />You are welcome!</p>
                 </div>
-                <div class="contacts__button">
+                <div class="contacts__button" data-aos="fade-down">
                     <button>
-                        <a
-                            href="#!"
-                            class="btn">
-                            Send message
-                        </a>
+                        <a href="#!" class="btn"> Send message </a>
                     </button>
                 </div>
-                <div class="contacts__social">
+                <div class="contacts__social" data-aos="zoom-in">
                     <a href="#!">
-                        <img
-                            src="./img/socials/LinkedIn.svg"
-                            alt="LinkedIn" />
+                        <img src="./img/socials/LinkedIn.svg" alt="LinkedIn" />
                     </a>
                     <a href="#!">
-                        <img
-                            src="./img/socials/Instargam.svg"
-                            alt="Instargam" />
+                        <img src="./img/socials/Instargam.svg" alt="Instargam" />
                     </a>
                     <a href="#!">
-                        <img
-                            src="./img/socials/Behance.svg"
-                            alt="Behance" />
+                        <img src="./img/socials/Behance.svg" alt="Behance" />
                     </a>
                     <a href="#!">
-                        <img
-                            src="./img/socials/Dribble.svg"
-                            alt="Dribble" />
+                        <img src="./img/socials/Dribble.svg" alt="Dribble" />
                     </a>
                 </div>
-                <div class="contacts__footer">
+                <div class="contacts__footer" data-aos="fade-up">
                     <p>
                         Like me on<br />
                         LinkedIn, Instagram, Behance, Dribble
@@ -216,6 +152,7 @@
             </div>
         </footer>
 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>

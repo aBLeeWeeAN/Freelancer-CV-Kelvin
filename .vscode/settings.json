@@ -1,7 +1,7 @@
 {
     "prettier.printWidth": 140,
     "prettier.tabWidth": 4,
-    "prettier.singleAttributePerLine": true,
+    "prettier.singleAttributePerLine": false,
     "prettier.bracketSameLine": true,
     "editor.defaultFoldingRangeProvider": "formulahendry.auto-rename-tag",
     "editor.defaultFormatter": "esbenp.prettier-vscode",

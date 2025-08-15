@@ -1,4 +1,40 @@
 @media (max-width: 1230px) {
+    /* .wrapper {
+        padding: 40px 30px 60px;
+    } */
+
+    .header {
+        padding-top: 40px;
+    }
+
+    .header-content {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    /* .header-content p {
+        margin-bottom: 20px;
+    } */
+
+    .header-img {
+        text-align: center;
+    }
+
+    .header-row {
+        flex-direction: column;
+    }
+
+    /* .header-heading {
+        font-size: 44px;
+        line-height: auto;
+
+        padding-bottom: 20px;
+    } */
+
+    .header-nav {
+        margin-bottom: 50px;
+    }
+
     .nav__list {
         display: none;
     }
@@ -6,11 +42,16 @@
     .nav__button {
         display: block;
 
-        position: fixed;
-        z-index: 1;
+        position: absolute;
+        z-index: 0;
 
         top: 46px;
         right: 30px;
+    }
+
+    .nav.open .nav__button {
+        position: fixed;
+        z-index: 1;
     }
 
     .nav.open .nav__list {
@@ -28,7 +69,7 @@
         right: 0;
 
         background-color: #fff;
-        /* z-index: 1; */
+        z-index: 1;
 
         padding: 46px 30px;
 
@@ -42,5 +83,60 @@
 
     .nav__link.active {
         color: #090909;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-heading {
+        font-size: 34px;
+        line-height: 130%;
+        /* padding-bottom: 20px; */
+    }
+
+    .header-heading span {
+        font-size: 28px;
+    }
+
+    .services {
+        padding: 60px 0;
+    }
+
+    .portfolio {
+        padding: 60px 0;
+    }
+
+    .portfolio__title {
+        margin-bottom: 50px;
+        /* text-align: center; */
+    }
+
+    .project + .project {
+        margin-top: 50px;
+    }
+
+    .project__img {
+        margin-bottom: 30px;
+    }
+
+    .contacts {
+        padding: 60px 0;
+    }
+
+    .contacts__title {
+        margin-bottom: 20px;
+    }
+
+    .contacts__content {
+        /* margin: 0 auto 20px; */
+        margin-bottom: 20px;
+    }
+
+    .contacts__button {
+        margin-bottom: 70px;
+    }
+
+    .contacts__social {
+        column-gap: 52px;
+        margin-bottom: 20px;
     }
 }

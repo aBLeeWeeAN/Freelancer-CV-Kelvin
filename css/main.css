@@ -23,6 +23,7 @@ body {
     color: #070707;
 }
 
+/* Header */
 .header {
     padding-top: 46px;
     background-color: #f1f1f1;
@@ -159,9 +160,14 @@ body {
     justify-content: space-between;
 
     column-gap: 30px;
+    row-gap: 60px;
+
+    flex-wrap: wrap;
 }
 
 .service-card {
+    min-width: 315px;
+    flex: 1 1 0;
 }
 
 .service-card__img {
